@@ -1,0 +1,170 @@
+body {
+  font-family: 'Arapey', serif;
+  margin: 0;
+  text-align: center;
+}
+
+img { 
+max-width: 100%; 
+} 
+
+button, input, select, textarea {
+  font-family : inherit;
+  font-size   : 100%;
+}
+
+input, textarea, select, button {
+  max-width: 50%;
+  margin: 0;
+}
+
+legend {
+  max-width: 40%;
+  max-height: 40%;
+  overflow: hidden;
+}
+
+input:focus, textarea:focus {
+  border-radius: 5px;
+  outline      : none;
+}
+
+.page-title{
+    float:none;
+    clear:left;
+    
+
+   
+}
+
+article {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+}
+
+
+/*  grids */
+
+main {
+	display: grid;
+    
+}
+
+/* hero content */
+
+.content {
+	display: grid;
+    margin: 20px 10%;
+    text-align: left;
+}
+
+/* about content */
+
+.about-content {
+	display: grid;
+}
+
+/*  gallery */
+
+.gallery {
+	display: grid;
+}
+
+/*  article */
+
+article {
+	display: grid;
+    width: 75%;
+    text-align: left;
+    
+    
+}
+
+/* form container */
+.form-container {
+	display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+}
+
+/* footer */
+
+footer {
+	display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/*  layout */
+
+/*   mobile is the default layout*/
+
+/* tablet layout >=48rem (768px) */
+
+@media screen and (min-width: 48rem) {
+
+	/* hero content */
+    
+ .content {
+	display: grid;
+    font-size: 1.25rem;
+}
+    
+/*	about content */
+
+.about-content {
+	display: grid;
+    font-size: 1.25rem;
+}
+
+.gallery {
+	display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+/*  article */
+
+article {
+	display: grid;
+    font-size: 1.25rem;
+    width: 28.125rem;
+    float:center;
+}
+
+/* form container */
+.form-container {
+	display: grid;
+    font-size: 1.25rem;
+}
+
+/* footer */
+
+footer {
+	display: grid;
+    font-size: 1.25rem;
+}
+   
+
+
+
+
+/* wide screen layout >=64rem (1024px) */
+
+@media screen and (min-width: 64rem) {
+
+	/*      hero content */
+
+	/*	about content */
+
+	/*	gallery */
+
+	/*	article */
+
+	/*	form */
+
+}
