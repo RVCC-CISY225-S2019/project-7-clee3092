@@ -1,0 +1,197 @@
+body {
+    font-family: 'Arapey', serif;
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    float: center;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+    max-width: 50%;
+    margin: 0;
+}
+
+legend {
+    max-width: 40%;
+    max-height: 40%;
+    overflow: hidden;
+}
+
+input:focus,
+textarea:focus {
+    border-radius: 5px;
+    outline: none;
+}
+
+.navbar {
+    display: flex;
+
+}
+
+p:first-line,
+div:first-line,
+blockquote: first-line,
+li: first-line {
+    background: transparent;
+    color: #000;
+    box-shadow: none;
+    text-shadow: none;
+
+}
+
+p {
+    widows: 4;
+    orphans: 3;
+}
+
+
+
+
+/*  grids */
+
+
+/* hero content */
+.header {
+    display: none;
+}
+
+.content {
+    display: grid;
+    margin: 20px 10%;
+    ;
+}
+
+/* about content */
+
+.about-content {
+    display: grid;
+}
+
+/*  gallery */
+
+.gallery {
+    display: grid;
+}
+
+/*  article */
+
+article {
+    display: grid;
+    width: 75%;
+    text-align: left;
+
+
+}
+
+/* form container */
+.form-container {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+}
+
+/* footer */
+
+footer {
+    display: none;
+
+    /*  layout */
+
+    /*   mobile is the default layout*/
+
+    /* tablet layout >=48rem (768px) */
+
+    @media screen and (min-width: 48rem) {
+
+        /* hero content */
+        .mobile-first {
+            display: none;
+        }
+
+        .content {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        /*	about content */
+
+        .content picutre,
+        .content p,
+        .about-content {
+            grid-column: 2/3;
+        }
+
+        figure {
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+
+        }
+
+
+
+        /*  article */
+
+        article {
+            grid-template-columns: 1fr 48rem 1fr;
+        }
+
+        article h1,
+        article .story-body {
+            grid-column: 2/3;
+        }
+
+        /* form container */
+        .form-container {
+            grid-template-columns: 1fr 48rem 1fr;
+        }
+
+        .form-container h1,
+        form {
+            grid-column: 2/3
+        }
+
+
+
+
+        /* wide screen layout >=64rem (1024px) */
+
+        @media screen and (min-width: 64rem) {
+
+            .content {
+                display: gr id;
+                grid-template-columns: 50% 50%;
+
+            }
+
+            /*	about content */
+
+
+
+        }
+
+        .gallery {
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+
+        .gallery h1 {
+            grid-column: 1/4;
+
+        }
+
+        /*  article */

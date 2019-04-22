@@ -1,89 +1,87 @@
 body {
-  font-family: 'Arapey', serif;
-  margin: 0;
-  text-align: center;
+    font-family: 'Arapey', serif;
+    margin: 0;
+    text-align: center;
 }
 
-img { 
-max-width: 100%; 
-} 
-
-button, input, select, textarea {
-  font-family : inherit;
-  font-size   : 100%;
+img {
+    max-width: 100%;
+    float: center;
 }
 
-input, textarea, select, button {
-  max-width: 50%;
-  margin: 0;
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+    max-width: 50%;
+    margin: 0;
 }
 
 legend {
-  max-width: 40%;
-  max-height: 40%;
-  overflow: hidden;
+    max-width: 40%;
+    max-height: 40%;
+    overflow: hidden;
 }
 
-input:focus, textarea:focus {
-  border-radius: 5px;
-  outline      : none;
+input:focus,
+textarea:focus {
+    border-radius: 5px;
+    outline: none;
 }
 
-.page-title{
-    float:none;
-    clear:left;
-    
+.navbar {
+    display: flex;
 
-   
 }
 
-article {
-    margin-left: auto;
-    margin-right: auto;
-    width: 30em;
-}
+
+
 
 
 /*  grids */
 
-main {
-	display: grid;
-    
-}
 
 /* hero content */
 
 .content {
-	display: grid;
+    display: grid;
     margin: 20px 10%;
-    text-align: left;
+    ;
 }
 
 /* about content */
 
 .about-content {
-	display: grid;
+    display: grid;
 }
 
 /*  gallery */
 
 .gallery {
-	display: grid;
+    display: grid;
 }
 
 /*  article */
 
 article {
-	display: grid;
+    display: grid;
     width: 75%;
     text-align: left;
-    
-    
+
+
 }
 
 /* form container */
 .form-container {
-	display: grid;
+    display: grid;
     margin-left: auto;
     margin-right: auto;
     width: 30em;
@@ -92,7 +90,7 @@ article {
 /* footer */
 
 footer {
-	display: grid;
+    display: grid;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -106,65 +104,88 @@ footer {
 
 @media screen and (min-width: 48rem) {
 
-	/* hero content */
-    
- .content {
-	display: grid;
-    font-size: 1.25rem;
-}
-    
-/*	about content */
+    /* hero content */
+    .mobile-first {
+        display: none;
+    }
 
-.about-content {
-	display: grid;
-    font-size: 1.25rem;
-}
+    .content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
-.gallery {
-	display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
+    /*	about content */
 
+    .content picutre,
+    .content p,
+    .about-content {
+        grid-column: 2/3;
+    }
 
-/*  article */
+    figure {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
 
-article {
-	display: grid;
-    font-size: 1.25rem;
-    width: 28.125rem;
-    float:center;
-}
-
-/* form container */
-.form-container {
-	display: grid;
-    font-size: 1.25rem;
-}
-
-/* footer */
-
-footer {
-	display: grid;
-    font-size: 1.25rem;
-}
-   
+    }
 
 
 
+    /*  article */
 
-/* wide screen layout >=64rem (1024px) */
+    article {
+        grid-template-columns: 1fr 48rem 1fr;
+    }
 
-@media screen and (min-width: 64rem) {
+    article h1,
+    article .story-body {
+        grid-column: 2/3;
+    }
 
-	/*      hero content */
+    /* form container */
+    .form-container {
+        grid-template-columns: 1fr 48rem 1fr;
+    }
 
-	/*	about content */
+    .form-container h1,
+    form {
+        grid-column: 2/3
+    }
 
-	/*	gallery */
+    /* footer */
 
-	/*	article */
+    footer {
+        display: grid;
+        font-size: 1.25rem;
+    }
 
-	/*	form */
 
-}
+
+
+
+    /* wide screen layout >=64rem (1024px) */
+
+    @media screen and (min-width: 64rem) {
+
+        .content {
+            display: gr id;
+            grid-template-columns: 50% 50%;
+
+        }
+
+        /*	about content */
+
+
+
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .gallery h1 {
+        grid-column: 1/4;
+
+    }
+
+    /*  article */
