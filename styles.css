@@ -162,16 +162,6 @@ footer {
 
 	@media screen and (min-width: 64rem) {
 
-		.content {
-			display: grid;
-			grid-template-columns: 50% 50%;
-
-		}
-
-		/*	about content */
-
-
-
 	}
 
 	.gallery {
